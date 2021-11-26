@@ -1,0 +1,153 @@
+.Principal {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr 1.3fr 1fr;
+    grid-template-rows: 1.0fr 0.9fr 2.6fr 0.5fr 0.6fr 0.9fr 1.3fr 1.2fr 0.8fr;
+    gap: 4px 4px;
+    grid-auto-flow: row;
+    grid-template-areas:
+    "Cabeza Cabeza Cabeza Cabeza"
+    "QuienesSomos QuienesSomos QuienesSomos QuienesSomos"
+    "Somos1 Somos1 info1 Akira"
+    "Somos1 Somos1 info1 Akira"
+    "Somos1 Somos1 info1 Akira"
+    "Somos2 Somos2 Info2 Akira"
+    "Somos2 Somos2 Info2 Akira"
+    "Somos2 Somos2 Info2 Akira"
+    "Pie-de-pagina Pie-de-pagina Pie-de-pagina Pie-de-pagina";
+    height: 800px;
+}
+
+.Cabeza { grid-area: Cabeza; border:2px #000000 solid }
+
+.Pie-de-pagina { grid-area: Pie-de-pagina; border:2px #000000 solid  }
+
+.QuienesSomos { grid-area: QuienesSomos; border:2px #000000 solid; background-color: #b0e7e7; }
+
+.Somos1 { grid-area: Somos1; border:2px #000000 solid; }
+
+.Silva{
+    width: 800px;
+    height: 292px;
+}
+
+.info1 { grid-area: info1; border:2px #000000 solid; background-color: #b0e7e7; }
+
+.Somos2 { grid-area: Somos2; border:2px #000000 solid}
+
+.noble {
+    width: 800px;
+    height: 269px;
+}
+
+.Info2 { grid-area: Info2; border:2px #000000 solid; background-color: #b0e7e7; }
+
+.Akira { grid-area: Akira; border:2px #000000 solid }
+
+.aside{
+    width:500px;
+    height: 568px;
+}
+
+.Nombre {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.articulo {
+    font-size: 20px;
+    margin-top: 8px;
+
+}
+
+/*--MEDIA--*/
+@media only screen and (max-width:1024px) {
+    .Principal {
+        width:1024px ;
+    }
+    .aside{
+        width:500px;
+        height: 559px;
+    }
+    .noble {
+        width: 800px;
+        height: 264px;
+    }
+    .Silva{
+        width: 800px;
+        height: 286px;
+    }
+}
+@media only screen and (max-width:800px) {
+    .Principal {
+        width:800px ;
+    }
+    .aside{
+        width:500px;
+        height: 568px;
+    }
+    .noble {
+        width: 800px;
+        height: 269px;
+    }
+    .Silva{
+        width: 800px;
+        height: 291px;
+    }
+    .Nombre {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .articulo {
+        font-size: 16px;
+        margin-top: 8px;
+    
+    }
+}
+@media only screen and (max-width:368px){
+    .Principal {
+        width:368px ;
+        grid-template-columns: 1fr 0.7fr 1.3fr 1fr;
+        grid-template-rows: 1.0fr 0.9fr 2.6fr 0.5fr 0.6fr 0.9fr 1.3fr 1.2fr 0.8fr;
+        grid-template-areas:
+        "Cabeza Cabeza Cabeza Cabeza"
+        "QuienesSomos QuienesSomos QuienesSomos QuienesSomos"
+        "Somos1 Somos1 info1 info1"
+        "Somos1 Somos1 info1 info1"
+        "Somos1 Somos1 info1 info1"
+        "Somos2 Somos2 Info2 Info2"
+        "Somos2 Somos2 Info2 Info2"
+        "Somos2 Somos2 Info2 Info2"
+        "Pie-de-pagina Pie-de-pagina Pie-de-pagina Pie-de-pagina";
+        
+    }
+    .Nombre {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .articulo {
+        font-size: 15px;
+        margin-top: 8px;
+    
+    }
+    
+    .aside{
+        width:0px;
+        height: 0px;
+    }
+    .noble {
+        width: 149px;
+        height: 256px;
+    }
+    .Silva{
+        width: 149px;
+        height: 277px;
+    }
+
+}
