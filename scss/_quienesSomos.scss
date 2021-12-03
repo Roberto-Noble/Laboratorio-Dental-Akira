@@ -107,7 +107,7 @@
     
     }
 }
-@media only screen and (max-width:368px){
+@media only screen and (max-width:411px){
     .Principal {
         width:368px ;
         grid-template-columns: 1fr 0.7fr 1.3fr 1fr;
@@ -122,6 +122,7 @@
         "Somos2 Somos2 Info2 Info2"
         "Somos2 Somos2 Info2 Info2"
         "Pie-de-pagina Pie-de-pagina Pie-de-pagina Pie-de-pagina";
+        height: auto;
         
     }
     .Nombre {
@@ -142,12 +143,58 @@
         height: 0px;
     }
     .noble {
+        width: 163px;
+        height: 300px;
+    }
+    .Silva{
+        width: 165px;
+        height: 328px;
+    }
+
+}
+@media only screen and (max-width:375px){
+    .Principal {
+        width:375px ;
+        grid-template-columns: 1fr 0.7fr 1.3fr 1fr;
+        grid-template-rows: 1.0fr 0.9fr 2.6fr 0.5fr 0.6fr 0.9fr 1.3fr 1.2fr 0.8fr;
+        grid-template-areas:
+        "Cabeza Cabeza Cabeza Cabeza"
+        "QuienesSomos QuienesSomos QuienesSomos QuienesSomos"
+        "Somos1 Somos1 info1 info1"
+        "Somos1 Somos1 info1 info1"
+        "Somos1 Somos1 info1 info1"
+        "Somos2 Somos2 Info2 Info2"
+        "Somos2 Somos2 Info2 Info2"
+        "Somos2 Somos2 Info2 Info2"
+        "Pie-de-pagina Pie-de-pagina Pie-de-pagina Pie-de-pagina";
+        height: auto;
+        
+    }
+    .Nombre {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    
+    .articulo {
+        font-size: 15px;
+        margin-top: 6px;
+        overflow: hidden;
+    
+    }
+    
+    .aside{
+        width:0px;
+        height: 0px;
+    }
+    .noble {
         width: 149px;
-        height: 256px;
+        height: 288px;
     }
     .Silva{
         width: 149px;
-        height: 277px;
+        height: 313px;
     }
 
 }
