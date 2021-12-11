@@ -42,9 +42,9 @@ nav li a {
         transform: translateX(0px);
         transition: all 0.5s;
         animation-name: efectoLogo;
-        animation-iteration-count: 10s;
+        animation-iteration-count: 50s;
         animation-timing-function: ease-in;
-        animation-duration: 5s;
+        animation-duration: 3s;
         animation-delay: 0s;
         @keyframes efectoLogo {
             0%{transform:rotateZ(0deg)}
@@ -137,7 +137,7 @@ nav li a {
     width: auto;
 }
 
-/* -- ANIMATED SCSS -- */
+
 
 
 
