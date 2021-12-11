@@ -29,7 +29,28 @@ nav li a {
     position: relative;
     width: 200px;
     height: 100px;
-    transform: translateX(-5px); }
+    transform: translateX(0px);
+    transition: all 0.5s;
+    animation-name: efectoLogo;
+    animation-iteration-count: 10s;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    animation-delay: 0s; }
+
+@keyframes efectoLogo {
+  0% {
+    transform: rotateZ(0deg); }
+  25% {
+    transform: rotateZ(90deg); }
+  50% {
+    transform: rotateZ(180deg); }
+  75% {
+    transform: rotateZ(270deg); }
+  100% {
+    transform: rotateZ(360deg); } }
+  .Banda__principal .Banda__principal--logo:hover {
+    width: 210px;
+    height: 105px; }
 
 .Banda__texto {
   background-color: #ffff;
@@ -83,7 +104,7 @@ nav li a {
   height: 100%;
   width: auto; }
 
-/* -- FOOTER SCSS -- */
+/* -- ANIMATED SCSS -- */
 /* -- CSS INDEX -- */
 * {
   margin: 0;
