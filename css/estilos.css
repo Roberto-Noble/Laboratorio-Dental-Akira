@@ -259,11 +259,14 @@ h1, .h1 {
 .Nombre {
   text-align: center;
   text-transform: uppercase;
-  font-size: 20px; }
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: 0ex; }
 
 .articulo {
   font-size: 20px;
-  margin-top: 8px; }
+  margin-top: 8px;
+  text-align: center; }
 
 /*--MEDIA--*/
 @media only screen and (max-width: 1024px) {
@@ -298,7 +301,8 @@ h1, .h1 {
     font-size: 15px; }
   .articulo {
     font-size: 16px;
-    margin-top: 8px; } }
+    margin-top: 8px;
+    text-align: center; } }
 
 @media only screen and (max-width: 411px) {
   .Principal {
